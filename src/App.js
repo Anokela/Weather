@@ -21,6 +21,7 @@ function App() {
     else {
       alert('Geolocation is not supported on your browser')
     }
+    
   }, [])
   
   if (isLoading) {
