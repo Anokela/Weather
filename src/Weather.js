@@ -47,7 +47,7 @@ export default function Weather({lat,lng}) {
             <div className="col-12">
                 <h3 className="header">Weather on your location</h3>
                 <div>
-                    <p>Temperature: {temp.toFixed(1)} C&#176;</p>
+                    <p>Temperature: {Math.round(temp)} C&#176;</p>
                     <p>Wind speed & direction: {speed} m/s, {direction} degrees</p>
                     <p>Weather description: {description}</p>
                     <img className="img-fluid" src={icon} alt=""/>
